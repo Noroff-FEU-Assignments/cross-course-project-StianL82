@@ -1,3 +1,3 @@
 # cross-course-project-StianL82
 
-#This will be my project folder for Squareeyes.
+This will be my project folder for Squareeyes.
