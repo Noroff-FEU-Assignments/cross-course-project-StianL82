@@ -390,6 +390,10 @@ justify-content: center;
     display: none;
 }
 
+.floated {
+    border: 3px solid #FFFCF6;
+}
+
 .floated, .floated-prize {
     float: left;
     margin-right: 20px;
