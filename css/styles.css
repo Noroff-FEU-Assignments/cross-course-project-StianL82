@@ -449,17 +449,13 @@ position: relative;
     display: flex;
 }
 
-.star_icon {
+.star_icon, .tomato_icon {
     height: 50px;
 }
 
 .tomato-rating {
     display: flex;
     align-items: center;
-}
-
-.tomato_icon {
-    height: 50px;
 }
 
 .recommendations {
@@ -946,7 +942,6 @@ input[type='radio']{
 
 .product-container-text h2 {
     font-size: 36px;
-    margin: 0px 0px 0px 0px;
 }
 
 .g2 {
@@ -1099,7 +1094,7 @@ footer a {
 }
 
 .our-origin, .join-our-team{
-    margin: 0px 10px 0px 10px ;
+    margin: 0px 10px;
 }
 
 .our-origin-image, .join-our-team-image {
@@ -1121,7 +1116,7 @@ footer a {
 
 .checkout-container {
     flex-direction: column;
-    margin: 0px 10px 0px 10px;
+    margin: 0px 10px;
     align-items: center;
 }
 
@@ -1145,7 +1140,7 @@ footer a {
 
 .success-container{
     flex-direction: column;
-    margin: 0px 10px 0px 10px;
+    margin: 0px 10px;
     align-items: center;
     gap: 30px;
 }
@@ -1206,6 +1201,10 @@ footer a {
 .footer-logo a {
     display: flex;
     justify-content: center;
+}
+
+.footer-logo img {
+    padding-right: 0px;
 }
 
 .footer-links {
@@ -1331,11 +1330,7 @@ footer a {
     grid-template-columns: 1fr;
 }
 
-.star_icon {
-    height: 30px;
-}
-
-.tomato_icon {
+.star_icon, .tomato_icon {
     height: 30px;
 }
 
@@ -1344,7 +1339,7 @@ footer a {
 }
 
 .film-info-left {
-    margin-left: 0px;
+    margin-left: 10px;
 }
 
 .film-info-right {
