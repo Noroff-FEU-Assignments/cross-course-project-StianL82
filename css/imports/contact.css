@@ -1,0 +1,69 @@
+/*CONTACT PAGE*/
+
+.contact-hedding {
+  display: flex;
+  justify-content: center;
+}
+
+.contact-information {
+  background: linear-gradient(180deg, #D9D9D9 0%, rgba(217, 217, 217, 0) 100%);
+  border: 2px solid black;
+  margin-bottom: 60px;
+  display: flex;
+  flex: 1;
+}
+
+.contact-information-img {
+  padding: 40px;
+  width: 100%;
+}
+
+.contact-img {
+  align-self: center;
+  order: 2;
+}
+
+.contact-first-row, .contact-seccond-row {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 10px;
+}
+
+.contact-first-row img, .contact-seccond-row img {
+  max-width: 50px;
+  margin-right: 10px;
+}
+
+.contact-first-row p, .contact-seccond-row p {
+  font-size: 16px;
+  margin-top: 0px;
+}
+
+.contact-chat {
+  min-height: 180px;
+  background-color: #D9D9D9;
+  border: 2px solid black;
+}
+
+
+.contact-chat h2 {
+  display: flex;
+  justify-content: center;
+}
+
+.contact-chat-button {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.try-our-chat-button {
+  border: 2px solid black;
+  border-radius: 10px;
+}
+
+.contact-block, .facebook-block, .email-block, .instagram-block {
+  display: flex;
+  align-items: center;
+}
