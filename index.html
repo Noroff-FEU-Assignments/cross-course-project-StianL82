@@ -20,6 +20,7 @@
     />
     <link rel="stylesheet" href="../css/styles.css" />
     <link rel="icon" href="../images/Logo.png" />
+    <script type="module" src="/js/pages/index.js"></script>
     <title>Squareeyes | Homepage</title>
   </head>
   <body>
@@ -97,90 +98,31 @@
 
       <section class="best-sellers">
         <div class="content-wrap">
-          <h2>Best Sellers</h2>
-          <div class="movie-row">
-            <div class="movie">
-              <a href="products/godzilla.html">
-                <img
-                  src="images/cover_godzilla.png"
-                  alt="Godzilla
-                    King of the monsters cover"
-                />
-              </a>
-              <p>Godzilla King of the monsters</p>
-              <h3>$9.99</h3>
-            </div>
-            <div class="movie">
-              <a href="products/toystory.html"
-                ><img src="images/cover_toystory4.png" alt="Toy Story 4 cover"
-              /></a>
-              <p>Toy Story 4</p>
-              <h3>$4.99</h3>
-            </div>
-            <div class="movie">
-              <a href="products/godzilla.html"
-                ><img src="images/cover_sweetheart.png" alt="Sweetheart cover"
-              /></a>
-              <p>Sweetheart</p>
-              <h3>$7.49</h3>
-            </div>
-            <div class="movie">
-              <a href="products/godzilla.html">
-                <img
-                  src="images/cover_once_upon_a_time_in_hollywood.png"
-                  alt="Once Upon A Time In Hollywood cover"
-                />
-              </a>
-              <p>Once Upon A Time In Hollywood</p>
-              <h3>$9.99</h3>
-            </div>
+          <div class="loading-indicator">
+            <div class="spinner"></div>
+            <p>Loading...</p>
           </div>
+          <h2>Best Sellers</h2>
+          <div class="movie-row favorites"></div>
         </div>
       </section>
 
-      <section class="toy-story_add">
+      <section class="avengers_add">
         <div class="add-container">
-          <a href="products/toystory.html">
-            <h2>Toy Story 4 on sale Now</h2>
+          <a href="products/movie.html?id=b9e4edb1-e798-45e3-9c46-f7cd75b9326f">
+            <h2>Avengers Endgame. Out Now</h2>
           </a>
         </div>
       </section>
 
       <section class="on-sale">
         <div class="content-wrap">
+          <div class="loading-indicator">
+            <div class="spinner"></div>
+            <p>Loading...</p>
+          </div>
           <h2>On Sale</h2>
-          <section class="movie-row">
-            <div class="movie">
-              <a href="products/godzilla.html">
-                <img src="images/cover_hobbs.png" alt="Hobbs & Shaw cover" />
-              </a>
-              <p>Hobbs & Shaw</p>
-              <h3>$9.99</h3>
-            </div>
-            <div class="movie">
-              <a href="products/godzilla.html"
-                ><img src="images/cover_scream.png" alt="Scream cover"
-              /></a>
-              <p>Scream</p>
-              <h3>$7.99</h3>
-            </div>
-            <div class="movie">
-              <a href="products/godzilla.html"
-                ><img
-                  src="images/cover_adams_family.png"
-                  alt="The Adams Family Halloween cover"
-              /></a>
-              <p>The Adams Family Halloween</p>
-              <h3>$7.99</h3>
-            </div>
-            <div class="movie">
-              <a href="products/godzilla.html">
-                <img src="images/cover_batman.png" alt="The Batman cover" />
-              </a>
-              <p>The Batman</p>
-              <h3>$9.99</h3>
-            </div>
-          </section>
+          <div class="movie-row onSale"></div>
         </div>
       </section>
     </main>
