@@ -9,6 +9,8 @@ export async function fetchApiCall() {
     return videos;
     }
     catch (error) {
+    const errorMessage = await displayError("An error occured when calling the API" );
+    console.log(error);
     }
 }
 fetchApiCall();
