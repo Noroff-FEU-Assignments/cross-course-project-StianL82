@@ -1,4 +1,5 @@
 # cross-course-project-StianL82
+
 cross-course-project-StianL82 created by GitHub Classroom
 
-This is my course assignment for Html/CSS
+This will be the folder for my cross course project.
