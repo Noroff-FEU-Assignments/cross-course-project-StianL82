@@ -1,0 +1,113 @@
+/*MAIN PAGE*/
+
+/*Hero*/
+
+.hero-text {
+  color: #B06100;
+  -webkit-text-stroke: 1px black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;    
+  }
+  
+  .hero-image {
+      background-image: url("/images/alt.jpg");
+      background-size: 100%;
+      background-repeat: no-repeat;
+  }
+  
+  .hero-text h1 {
+      justify-content: center;
+      font-size: clamp(24px, 8vw, 80px);
+      margin: 10px 0px 0px 10px;
+  }
+  
+  .more-videos-button {
+      margin: 10px 10px 20px 0px;
+  }
+  
+  
+  .more-videos-button a{
+      max-width: 300px;
+      margin: 0;
+      text-decoration: none;
+  }
+  
+  .hero-image h1 span {
+      display: block;
+      font-size: clamp(18px, 6vw, 60px);
+  }
+  
+  
+  /*Toy Story Add*/
+  
+  .add-container {
+      background-image: url("/images/avengers-advert2-min.jpg");
+      background-size: 100%;
+      background-repeat: no-repeat;
+      z-index: 0;
+  }
+  
+  .add-container h2 {
+      color: #ffffff;
+      font-size: clamp(18px, 6vw, 60px);
+      display: flex;
+      justify-content: center;
+      padding: 50px;
+      -webkit-text-stroke: 1px black;
+  }
+  
+  .add-container a {
+      text-decoration: none;
+  }
+  
+  
+  /*Best Sellers*/
+  
+  .movie-row {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      justify-items: center;
+  }
+  
+  .movie-row ::-webkit-scrollbar {
+      width: 10px;
+  }
+  
+  .movie {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+  
+  
+  .movie p {
+      font-size: 20px;
+      margin: 0;
+      text-align: center;
+      max-width: 250px;
+  }
+  
+  .movie h3 {
+      margin: 2px;
+      text-align: center;
+  }
+  
+  .moviesImage {
+      width: 100%;
+      max-width: 250px;
+      max-height: 356px;
+  }
+  
+  .movie img {
+      width: 100%;
+      height: 100%;
+      max-height: 100%;
+      object-fit: cover;
+  }
+  
+  .movie img:hover {
+      border: 4px solid black;
+  }
