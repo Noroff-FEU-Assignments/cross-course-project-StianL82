@@ -1,6 +1,7 @@
 import { displayError } from "../components/display_error.js"
 import { fetchApiCall } from "../data/fetch_api.js";
 import {loadingIndicator, showLoadingIndicator, hideLoadingIndicator} from "../components/loading_indicator.js"
+import { movieHTML, renderMovie } from "../data/render_html.js"
 
 loadingIndicator.style.display = "block";
 
@@ -11,35 +12,6 @@ const kidsContainer = document.querySelector(".kidsGenre");
 const dramaContainer = document.querySelector(".dramaGenre");
 const horrorContainer = document.querySelector(".horrorGenre");
 const comedyContainer = document.querySelector(".comedyGenre");
-
-const movieHTML = (movie) => {
-  let price;
-  if (movie.onSale) {
-    price = movie.discountedPrice;
-  } else {
-    price = movie.price;
-  }
-
-  return `
-    <div class="movie">
-      <div class="moviesImage">
-        <a href="/products/movie.html?id=${movie.id}">
-          <img
-            src="${movie.image}"
-            alt="${movie.title}"
-          />
-        </a>
-      </div>  
-      <p>${movie.title}</p>
-      <h3>$${price}</h3>
-    </div>
-  `;
-};
-
-
-function renderMovie(container, movie) {
-  container.innerHTML += movieHTML(movie);
-}
 
 
 //RENDER ACTION MOVIES
