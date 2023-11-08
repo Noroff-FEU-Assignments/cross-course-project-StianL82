@@ -16,7 +16,8 @@
     />
     <link rel="stylesheet" href="../css/styles.css" />
     <link rel="icon" href="../images/Logo.png" />
-    <title>Product | Godzilla</title>
+    <script type="module" src="/js/pages/movie.js"></script>
+    <title>Product | Movie</title>
   </head>
   <body>
     <div class="header-section">
@@ -77,128 +78,17 @@
     </div>
 
     <main>
-      <section>
-        <div class="godzilla-hero">
-          <div class="product-container">
-            <div class="content-wrap">
-              <div>
-                <div class="floated g1 hidden-img-big">
-                  <img
-                    src="../images/cover_godzilla.png"
-                    alt="Godzilla
-                    King of the monsters Cover"
-                    class="godzilla-cover"
-                  />
-                </div>
-                <div class="product-container-text">
-                  <div class="floated g1 hidden-img-small">
-                    <img
-                      src="../images/cover_godzilla.png"
-                      alt="Godzilla
-                      King of the monsters Cover"
-                      class="godzilla-cover"
-                    />
-                  </div>
-                  <div class="g2">
-                    <h1>Godzilla: King of the Monsters</h1>
-                  </div>
-                  <div class="g3">
-                    <p>
-                      The crypto-zoological agency Monarch faces off against a
-                      battery of god-sized monsters, including the mighty
-                      Godzilla, who collides with Mothra, Rodan, and his
-                      ultimate nemesis, the three-headed King Ghidorah.
-                    </p>
-                  </div>
-                  <div class="g4">
-                    <h2 class="floated-prize">$ 9.99</h2>
-                  </div>
-                  <div class="g5">
-                    <a href="../cart.html">
-                      <h3 class="cta add-to-cart-button">Add to Cart</h3>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <div class="movie-hero" id="movieHero"></div>
 
-      <div>
-        <div class="content-wrap">
-          <div class="infopics">
-            <img
-              src="../images/godzilla_info1pic.png"
-              alt="Picture of King Ghidorah from the movie Godzilla"
-            />
-            <img
-              src="../images/godzilla_info2pic.png"
-              alt="Picture of King Ghidorah and a stealth fighter from the movie Godzilla"
-            />
-          </div>
-        </div>
-      </div>
+      <section id="movieProduct"></section>
 
-      <section id="film-info">
-        <div class="content-wrap">
-          <div class="film-info">
-            <div class="film-info-left">
-              <h3>Godzilla: King of the Monsters</h3>
-              <h4>Year: 2019</h4>
-              <h4>Age: 12</h4>
-              <h4>Runtime: 2h 12m</h4>
-              <h4>Genre: Action Adventure Fantasy</h4>
-            </div>
-            <div class="film-info-right">
-              <div class="star-rate">
-                <img
-                  src="../images/Star_1.png"
-                  alt="star-icon"
-                  class="star_icon"
-                />
-                <h4>6.0/10 Imdb Ranking</h4>
-              </div>
-              <div class="tomato-rating">
-                <img
-                  src="../images/tomatometer-fresh.149b5e8adc3.svg"
-                  alt="tomato icon"
-                  class="tomato_icon"
-                />
-                <h4>42% Rotten Tomatoes Ranking</h4>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <section id="film-info"></section>
 
       <section id="recommendations">
         <div class="content-wrap">
           <h4>Other recommendations</h4>
           <div class="recommendations">
-            <div class="rec-images">
-              <a href="../products/godzilla.html">
-                <img
-                  src="../images/cover_lord_of_the_rings.png"
-                  alt="Lord of the rings Cover"
-                />
-              </a>
-              <a href="../products/toystory.html"
-                ><img src="../images/cover_scream.png" alt="Scream Cover"
-              /></a>
-              <a href="../products/godzilla.html"
-                ><img src="../images/cover_john_wick.png" alt="John Wick Cover"
-              /></a>
-              <a href="../products/toystory.html"
-                ><img src="../images/cover_batman.png" alt="Batman Cover"
-              /></a>
-              <a href="../products/godzilla.html">
-                <img
-                  src="../images/cover_sweetheart.png"
-                  alt="Sweetheart Cover"
-                />
-              </a>
-            </div>
+            <div class="rec-images"></div>
           </div>
         </div>
       </section>
