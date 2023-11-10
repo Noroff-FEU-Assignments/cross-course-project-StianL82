@@ -9,7 +9,7 @@ export async function fetchApiCall() {
     return videos;
     }
     catch (error) {
-    const errorMessage = await displayError("An error occured when calling the API" );
+    const errorMessage = await displayError("We are having trouble fetching the information from the API" );
     console.log(error);
     }
 }
