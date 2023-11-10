@@ -1,18 +1,15 @@
 import { displayError } from "../components/display_error.js"
 import { fetchApiCall } from "../data/fetch_api.js";
 import {loadingIndicator, showLoadingIndicator, hideLoadingIndicator} from "../components/loading_indicator.js"
-import { movieHTML, renderMovie } from "../data/render_html.js"
+import { renderMovie } from "../data/render_html.js"
 let results= await fetchApiCall();
-
-loadingIndicator.style.display = "block";
 
 const favoriteContainer = document.querySelector(".favorites");
 const onSaleContainer = document.querySelector(".onSale");
 
-console.log(results);
+loadingIndicator.style.display = "block";
 
 //Render favorites movies 
-
 async function renderFavoritesHTML(movies) {
   showLoadingIndicator();
   try {
@@ -26,7 +23,7 @@ async function renderFavoritesHTML(movies) {
     }
   }
   catch (error) {
-    const errorMessage = await displayError("An error occured when calling the API" );
+    const errorMessage = await displayError("We are having trouble fetching the information from the API" );
     favoriteContainer.innerHTML = errorMessage;
 } finally {
   hideLoadingIndicator();
@@ -36,7 +33,6 @@ renderFavoritesHTML(results);
 
 
 //On Sale sorted from movies with onSale=True
-
 async function renderOnSaleHTML(movies) {
   showLoadingIndicator();
   try {
@@ -50,7 +46,7 @@ async function renderOnSaleHTML(movies) {
     }
   }
   catch (error) {
-    const errorMessage = await displayError("An error occured when calling the API" );
+    const errorMessage = await displayError("We are having trouble fetching the information from the API" );
     onSaleContainer.innerHTML = errorMessage;
 } finally {
   hideLoadingIndicator();
