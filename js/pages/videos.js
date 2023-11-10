@@ -1,7 +1,7 @@
 import { displayError } from "../components/display_error.js"
 import { fetchApiCall } from "../data/fetch_api.js";
 import {loadingIndicator, showLoadingIndicator, hideLoadingIndicator} from "../components/loading_indicator.js"
-import { movieHTML, renderMovie } from "../data/render_html.js"
+import { renderMovie } from "../data/render_html.js"
 
 loadingIndicator.style.display = "block";
 
