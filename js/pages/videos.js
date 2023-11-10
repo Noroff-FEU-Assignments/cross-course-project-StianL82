@@ -14,7 +14,7 @@ const horrorContainer = document.querySelector(".horrorGenre");
 const comedyContainer = document.querySelector(".comedyGenre");
 
 
-//RENDER ACTION MOVIES
+//Render Action Movies
 async function renderActionHTML(movies) {
   showLoadingIndicator();
   try {
@@ -28,7 +28,7 @@ async function renderActionHTML(movies) {
   }
 }
   catch (error) {
-    const errorMessage = await displayError("An error occured when calling the API" );
+    const errorMessage = await displayError("We are having trouble fetching the information from the API" );
     actionContainer.innerHTML = errorMessage;
   } finally {
     hideLoadingIndicator();
@@ -37,7 +37,7 @@ async function renderActionHTML(movies) {
 renderActionHTML(results);
 
 
-// RENDER KIDS MOVIES
+// Render Kids movies
 async function renderKidsHTML(movies) {
   showLoadingIndicator();
   try {
@@ -51,7 +51,7 @@ async function renderKidsHTML(movies) {
     }
   }
   catch (error) {
-    const errorMessage = await displayError("An error occured when calling the API" );
+    const errorMessage = await displayError("We are having trouble fetching the information from the API" );
     kidsContainer.innerHTML = errorMessage;
 } finally {
   hideLoadingIndicator();
@@ -60,7 +60,7 @@ async function renderKidsHTML(movies) {
 renderKidsHTML(results);
 
 
-// RENDER DRAMA MOVIES
+// Render Drama movies
 async function renderDramaHTML(movies) {
   showLoadingIndicator();
   try {  const dramaMovies = movies.filter(function(movie) {
@@ -72,7 +72,7 @@ async function renderDramaHTML(movies) {
     renderMovie(dramaContainer, movie);
   }}
   catch (error) {
-    const errorMessage = await displayError("An error occured when calling the API" );
+    const errorMessage = await displayError("We are having trouble fetching the information from the API" );
     dramaContainer.innerHTML = errorMessage;
 } finally {
   hideLoadingIndicator();
@@ -81,7 +81,7 @@ async function renderDramaHTML(movies) {
 renderDramaHTML(results);
 
 
-// RENDER HORROR MOVIES
+// Render Horror movies
 async function renderHorrorHTML(movies) {
   showLoadingIndicator();
   try {
@@ -95,7 +95,7 @@ async function renderHorrorHTML(movies) {
     }
   }
   catch (error) {
-    const errorMessage = await displayError("An error occured when calling the API" );
+    const errorMessage = await displayError("We are having trouble fetching the information from the API" );
     horrorContainer.innerHTML = errorMessage;
 } finally {
   hideLoadingIndicator();
@@ -104,7 +104,7 @@ async function renderHorrorHTML(movies) {
 renderHorrorHTML(results);
 
 
-// RENDER COMEDY MOVIES
+// Render Comedy movies
 async function renderComedyHTML(movies) {
   showLoadingIndicator();
   try {
@@ -118,7 +118,7 @@ async function renderComedyHTML(movies) {
     }
   }
   catch (error) {
-    const errorMessage = await displayError("An error occured when calling the API" );
+    const errorMessage = await displayError("We are having trouble fetching the information from the API" );
     comedyContainer.innerHTML = errorMessage;
 } finally {
   hideLoadingIndicator();
