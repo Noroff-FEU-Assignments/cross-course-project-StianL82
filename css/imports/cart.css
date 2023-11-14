@@ -1,0 +1,126 @@
+/*CART*/
+
+#checkout {
+  margin: 100px 20px 40px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.checkout img {
+  max-width: 1100px;
+  width: 100%;
+}
+
+.your-purchase {
+  background-color: #223241;
+  color: #FFF;
+  display: flex;
+  flex: 1;
+  padding: 10px;
+  margin: 10px 10px 20px 10px;
+  border: 2px solid #000000;
+  border-radius: 10px;
+}
+
+.your-purchase img {
+  max-width: 148px;
+  max-height: 220px;
+  margin-right: 20px;
+  border: 2px solid #fff;
+}
+
+.your-purchase form {
+  margin-right: 10px;
+}
+
+.your-purchase form legend {
+  font-size: 20px;
+  margin: 0px 0px 10px 5px;
+}
+
+.your-purchase form input{
+  max-width: 96px;
+  min-height: 66px;
+  font-size: 24px;
+  float: left;
+  margin-right: 20px;
+  border-radius: 15px;
+  border: 2px solid black;
+}
+
+#quantity1, #quantity2 {
+  text-align: center;
+}
+
+input:focus::placeholder{
+  color: transparent;
+}
+
+.remove-product {
+  color: #ff6464;  
+  font-weight: bold;
+  font-size: 24px;
+  min-width: 160px;
+  padding-top: 15px;
+}
+
+.personal-information .personal-content-wrap {
+  display: flex;
+  justify-content: space-around;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.conta {
+  flex-grow: 1;
+  margin: 0px 10px;
+}
+
+.your-information {
+  background: linear-gradient(180deg, #D9D9D9 0%, rgba(217, 217, 217, 0) 100%);
+  border: 3px solid black;
+  display: flex;
+  flex-direction: column;
+  line-height: 10px;
+}
+
+.your-information p {
+  margin-left: 20px;
+}
+
+.how-to-pay {
+  background: linear-gradient(180deg, #D9D9D9 0%, rgba(217, 217, 217, 0) 100%);
+  border: 3px solid black;
+  display: flex;
+  flex-direction: column;
+}
+
+.how-to-pay div {
+  margin-bottom: 20px;
+  font-size: 24px;
+  margin-top: 8px;
+}
+
+input[type='radio']{
+  transform: scale(2);
+  margin-left: 20px;
+  margin-top: -1px;
+  vertical-align: middle;
+}
+
+.card-input {
+  float: left;
+}
+
+.continue-button {
+  border: 3px solid black;
+  position: relative;
+  left: 65%;
+  text-decoration: none;
+}
+
+.cart-button a {
+  text-decoration: none;
+}

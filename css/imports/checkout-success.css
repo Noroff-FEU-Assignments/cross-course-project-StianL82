@@ -1,0 +1,44 @@
+/*CHECKOUT SUCCESS*/
+
+.success-container {
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
+}
+
+.check-success1, .check-success2 {
+  background-color: #a9a4a4;
+  max-width: 500px;
+  padding: 20px;
+  border: 2px solid black;
+}
+
+.success-images {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.success-images img {
+  max-width: 80px;
+}
+
+.success-images div {
+  display: block;
+  justify-content: space-between;
+}
+
+.back-to-store-button{
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.back-to-store-button img {
+  max-width: 300px
+}
+
+.check-success2 a {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+}

@@ -1,0 +1,492 @@
+@import "imports/global.css";
+@import "imports/homepage.css";
+@import "imports/videos.css";
+@import "imports/cart.css";
+@import "imports/checkout.css";
+@import "imports/checkout-success.css";
+@import "imports/about.css";
+@import "imports/contact.css";
+
+
+/*@media*/
+
+@media (max-width: 1025px) {
+
+.product-container-text {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.product-container-text h1 {
+    font-size: 36px;
+}
+
+.product-container-text h2 {
+    font-size: 36px;
+}
+
+.product-container-text {
+    position: static;
+    margin: 10px;
+}
+
+.hidden-img-big {
+    display: none;
+}
+
+.hidden-img-small {
+    display: block;
+}
+
+.hidden-img-small img {
+    border: 3px solid #FFFCF6;
+}
+}
+
+/*TABLET RESPONSIVE*/
+
+@media (max-width: 885px) {
+
+/*header*/
+
+header {
+    margin-right: 18%;
+}
+
+.nav-hidden, header nav a{
+    display: block;
+}
+
+.search, .user-icon {
+    display: none;
+}
+
+header nav {
+    display: none;
+    position: fixed;
+    top: 100px;
+    z-index: 1;
+    background-color: #223241;
+    padding: 20px;
+    border: 3px solid black;
+}
+
+.h-links {
+    display: block;
+}
+
+.hamburger-icon {
+    display: block;
+    order: 1;
+}
+
+.logo {
+    order: 2;
+}
+
+.cart-icon {
+    order: 3;
+}
+
+#hamburger:checked ~ nav {
+    display: block;
+}
+
+.hidden-search {
+    height: 36px;
+    width: 240px;
+    border-radius: 30px;
+}
+
+/*Footer*/
+
+.footer-links{
+    gap: 50px;
+}
+
+footer a {
+    font-size: 24px;
+}
+
+.footer-logo img {
+    max-width: 80%;
+}
+
+/*main*/
+
+.more-videos-button {
+    font-size: 24px;
+}
+
+.add-container h1 {
+    padding: 40px;
+}
+
+.best-sellers, .on-sale{
+    text-align: center;
+}
+
+/*About*/
+
+.about-hedding h1 {
+    font-size: 36px;
+}
+
+.our-origin{
+    flex-direction: column;
+}
+
+.join-our-team {
+    flex-direction: column-reverse;
+}
+
+.join-team-text h2 {
+    justify-content: center;
+}
+
+.our-origin, .join-our-team{
+    margin: 0px 10px;
+}
+
+.our-origin-image, .join-our-team-image {
+    margin: 0;
+}
+
+.about-logo img{
+    max-width: 325px;
+    width: 40%
+}
+
+/*Product*/
+
+.g4 {
+    flex-basis: 40%;
+}
+
+.product-container {
+    grid-template-columns: 1fr;   
+    place-items: center;
+}
+
+.film-info {
+    grid-template-columns: 1fr;
+    margin-top: 440px;
+}
+
+
+/*Checkout*/
+
+.checkout-container {
+    flex-direction: column;
+    margin: 0px 10px;
+    align-items: center;
+}
+
+.check1 {
+    margin-bottom: 20px;
+}
+
+.check1 h3 {
+    text-align: center;
+}
+
+.purchase-button {
+    padding: 10px 70px;
+}
+
+.check2 {
+    width: 100%;
+}
+
+/*Checkout success*/
+
+.success-container{
+    flex-direction: column;
+    margin: 0px 10px;
+    align-items: center;
+    gap: 30px;
+}
+
+.back-to-store-button img {
+    max-width: 200px
+}
+
+/*Contact*/
+
+.contact-information {
+    flex-direction: column;
+}
+
+.contact-first-row, .contact-seccond-row {
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.email-block {
+    margin-left: 20px;
+}
+.instagram-block {
+    margin-right: 10px;
+}
+
+.contact-img {
+    order: 0;
+}
+}
+
+/*Extra*/
+
+@media (max-width: 720px) {
+
+/*Footer*/
+
+.footer-links{
+    gap: 30px;
+}
+
+.movie-row {
+    overflow-x: auto;
+}
+
+.footer-content {
+    flex-wrap: wrap;
+}
+
+.footer-logo {
+    display: flex;
+    flex: 1 1 100%;
+    justify-content: center;
+    padding-right: 0px;
+    margin-bottom: 30px;
+}
+
+.footer-logo a {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-logo img {
+    padding-right: 0px;
+}
+
+.footer-links {
+    flex-direction: column;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.footer-icons {
+    margin-right: 20px;
+}
+
+footer p {
+    font-size: 10px;
+}
+
+
+/*Contact*/
+
+.personal-information .personal-content-wrap {
+    flex-direction: column; 
+}
+
+.continue-button {
+    position: static;
+    display: flex;
+    width: 250px;
+    border-radius: 10px;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.cart-button {
+    display: flex;
+    justify-content: center;
+}
+
+.conta h2 {
+    text-align: center;
+}
+}
+
+
+/*MOBILE RESPONSIVE*/
+
+@media (max-width: 600px) {
+
+h1 {
+    font-size: 30px;
+}
+h2 {
+    font-size: 26px;
+}
+h3 {
+    font-size: 18px;
+}
+p {
+    font-size: 16px;
+}
+
+header {
+    margin-right: 12%;
+}
+
+footer a {
+    font-size: 20px;
+}
+
+
+/*main*/
+
+.more-videos-button {
+    font-size: 16px;
+}
+
+.best-sellers {
+    margin-bottom: 20px;
+}
+
+.movie p {
+    font-size: 16px;
+    max-width: 160px;
+}
+
+.movie img {
+    max-width: 160px;
+}
+
+.add-container h1 {
+    padding: 30px;
+}
+
+
+/*videos*/
+
+.genre-nav {
+    padding: 10px;
+}
+
+
+/*Cart*/
+
+#checkout {
+    margin: 50px 20px 40px 20px;
+}
+
+
+/*checkout*/
+
+.expiry input{
+    max-width: 200px;
+}
+
+.card-form form {
+    padding: 10px;
+}
+
+
+/*Product Page*/
+
+.film-info {
+    margin-top: 180px;
+}
+
+.movieImage img {
+    max-width: 300px;
+    border: 2px solid #FFFCF6;
+}
+
+.star_icon, .tomato_icon {
+    height: 30px;
+}
+
+.star-rate h4{
+    margin-top: 5px;
+}
+
+.film-info-left {
+    margin-left: 10px;
+}
+
+.film-info-right {
+    margin: 0px 0px 0px 20px;
+}
+
+.product-container-text h1 {
+    font-size: 20px;
+}
+
+.infopics {
+    flex-direction: column;   
+}
+
+.infopics img {
+    max-width: 100%;
+    padding: 40px;
+}
+
+
+/*Checkout*/
+
+.continue-button {
+    font-size: 36px;
+}
+
+.card-form input {
+    margin: 0px 10px 10px 10px;
+}
+
+
+/*Contact*/
+
+.contact-first-row, .contact-seccond-row {
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-block {
+    margin-right: 90px;
+}
+
+.email-block {
+    margin-right: 56px;
+}
+
+.instagram-block {
+    margin-left: 27px;
+}
+
+
+/*About*/
+
+.our-origin-image img, .join-our-team-image img {
+    min-width: 140px;
+}
+}
+
+
+/*Extra*/
+
+@media (max-width: 460px) {
+
+.footer-logo img {
+    max-width: 70%;
+}
+
+.expiry-cvc {
+    flex-direction: column;
+}
+
+.expiry input, .cvc input{
+    max-width: 100%;
+}
+
+.purchase-button {
+    padding: 10px 70px;
+}
+
+.contact-chat-button {
+    flex-direction: column;
+    text-align: center;
+}
+}

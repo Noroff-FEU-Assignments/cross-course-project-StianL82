@@ -1,0 +1,58 @@
+/*ABOUT PAGE*/
+
+.about-hedding h1{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.our-origin-background, .join-our-team-background {
+  background-color: #D9D9D9;
+}
+
+.our-origin, .join-our-team{
+  display: flex;
+  align-items: center;
+}
+
+.our-origin-image {
+  margin-right: 20px;
+}
+
+.our-origin-image img, .join-our-team-image img {
+  min-width: 300px;
+  width: 100%;
+}
+
+.our-origin-image h2, .join-our-team-image h2 {
+  margin: 10px 0px 0px 0px;
+}
+
+.our-origin-image h4, .join-our-team-image h4 {
+  margin: 0px 0px 10px 0px;
+}
+
+.about-logo {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0px 20px 0px;
+}
+
+.join-our-team-image {
+  margin-left: 20px;
+  padding-bottom: 20px;
+}
+
+.join-team-text {
+  align-items: center;
+}
+
+.join-team-text h2 {
+  display: flex;
+  justify-content: flex-end;
+  color: #974905;
+}
+
+.join-our-team {
+  margin-bottom: 100px;
+}
