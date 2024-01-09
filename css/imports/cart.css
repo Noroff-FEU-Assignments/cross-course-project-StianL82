@@ -23,15 +23,24 @@
   border-radius: 10px;
 }
 
+.your-purchase h3 {
+  font-size: 24px;
+  margin: 0px;
+}
+
+.your-purchase p {
+  font-size: 18px;
+}
+
 .your-purchase img {
-  max-width: 148px;
-  max-height: 220px;
+  max-width: 75px;
+  max-height: 110px;
   margin-right: 20px;
   border: 2px solid #fff;
 }
 
 .your-purchase form {
-  margin-right: 10px;
+  margin: 0px 20px;
 }
 
 .your-purchase form legend {
@@ -40,14 +49,20 @@
 }
 
 .your-purchase form input{
-  max-width: 96px;
-  min-height: 66px;
+  max-width: 80px;
+  min-height: 55px;
   font-size: 24px;
-  float: left;
-  margin-right: 20px;
   border-radius: 15px;
   border: 2px solid black;
+  text-align: center;
 }
+
+.quantity-box {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+}
+
 
 #quantity1, #quantity2 {
   text-align: center;
@@ -61,53 +76,24 @@ input:focus::placeholder{
   color: #ff6464;  
   font-weight: bold;
   font-size: 24px;
-  min-width: 160px;
-  padding-top: 15px;
+  margin: 0px;
+  padding-top: 25px;
+  cursor: pointer;
 }
 
-.personal-information .personal-content-wrap {
-  display: flex;
-  justify-content: space-around;
-  gap: 30px;
-  max-width: 1200px;
-  margin: 0 auto;
+.quantity-down, .quantity-up{
+  color: rgb(30, 119, 3);  
+  font-weight: bold;
+  font-size: 30px;
+  margin: 0px;
 }
 
-.conta {
-  flex-grow: 1;
-  margin: 0px 10px;
+.quantity-down {
+  margin-left: 10px;
 }
 
-.your-information {
-  background: linear-gradient(180deg, #D9D9D9 0%, rgba(217, 217, 217, 0) 100%);
-  border: 3px solid black;
-  display: flex;
-  flex-direction: column;
-  line-height: 10px;
-}
-
-.your-information p {
-  margin-left: 20px;
-}
-
-.how-to-pay {
-  background: linear-gradient(180deg, #D9D9D9 0%, rgba(217, 217, 217, 0) 100%);
-  border: 3px solid black;
-  display: flex;
-  flex-direction: column;
-}
-
-.how-to-pay div {
-  margin-bottom: 20px;
-  font-size: 24px;
-  margin-top: 8px;
-}
-
-input[type='radio']{
-  transform: scale(2);
-  margin-left: 20px;
-  margin-top: -1px;
-  vertical-align: middle;
+.quantity-up {
+  margin-right: 40px;
 }
 
 .card-input {
@@ -115,12 +101,102 @@ input[type='radio']{
 }
 
 .continue-button {
-  border: 3px solid black;
-  position: relative;
-  left: 65%;
-  text-decoration: none;
+  margin-top: auto;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+  max-width: 240px;
+  width: 100%;
 }
 
 .cart-button a {
   text-decoration: none;
+}
+
+.cart-container {
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 20px;
+}
+
+.purchase-container {
+  background-color: #D9D9D9;
+  border: 2px solid black;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  flex-basis: 60%;
+}
+
+.your-order-container {
+  background-color: #D9D9D9;
+  width: 100%;
+  border: 2px solid black;
+  flex-basis: 40%;
+  position: sticky;
+  top: 0;
+  border-radius: 10px;
+}
+
+.empty-cart {
+  text-align: center;
+  display: none;
+}
+
+.your-order {
+  padding: 10px;
+  gap: 10px;
+}
+
+.your-order-h2, .purchase-container h2 {
+  margin-left: 20px;
+}
+
+.your-order-container h3 {
+  margin: 10px 0px 10px 0px;
+}
+
+.your-order h5 {
+  margin-left: 10px;
+  padding: 10px;
+}
+
+.checkout-product {
+  background-color: #FBFAFA;
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 20px;
+  align-items: center;
+}
+
+.checkout-product h4 {
+  margin: 10px;
+}
+
+.clearfix::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.check3 {
+  display: flex;
+  justify-content: space-evenly;
+  line-height: 16px;
+  margin-top: 20px;
+}
+
+.remove-product-container {
+  flex-wrap: wrap;
+}
+
+.quantity {
+  display: flex;
+  align-items: center;
+}
+
+.total-price {
+  display: none;
 }
