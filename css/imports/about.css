@@ -1,6 +1,6 @@
 /*ABOUT PAGE*/
 
-.about-hedding h1{
+.about-heading h1{
   display: flex;
   justify-content: center;
   margin-bottom: 20px;
@@ -25,7 +25,7 @@
 }
 
 .our-origin-image h2, .join-our-team-image h2 {
-  margin: 10px 0px 0px 0px;
+  margin: 40px 0px 0px 0px;
 }
 
 .our-origin-image h4, .join-our-team-image h4 {
@@ -47,6 +47,10 @@
   align-items: center;
 }
 
+.join-team-text a {
+  text-decoration: none;
+}
+
 .join-team-text h2 {
   display: flex;
   justify-content: flex-end;
@@ -55,4 +59,8 @@
 
 .join-our-team {
   margin-bottom: 100px;
+}
+
+.learn-more h2{
+  text-decoration: none;
 }
