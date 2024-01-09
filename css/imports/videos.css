@@ -10,6 +10,10 @@
   text-align: center;
   font-size: 20px;
   max-width: 100%;
+  position: sticky;
+  top: 100px;
+  z-index: 999;
+  width: 100%;
 }
 
 .genre-nav-content {
@@ -72,8 +76,19 @@
 
 .movieImage img {
   width: 100%;
-  max-width: 440px;
+  max-width: 300px;
   border: 5px solid #FFFCF6;
+}
+
+#backToLastPage {
+  display: flex;
+  align-items: center;
+}
+
+#backToLastPage img{
+  max-width: 50px;
+  border: none;
+  padding-right: 10px;
 }
 
 .product-container {
@@ -88,6 +103,9 @@
 
 .movieImage {
   margin: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
 }
 
 .product-container.reset-position {
@@ -114,19 +132,29 @@ font-size: 36px;
 
 .add-to-cart-button {
   margin: 20px;
-  margin-bottom: 100px;
-  padding: 10px 50px;
+  padding: 10px 80px;
   border-radius: 10px;
   border: 2px solid black;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.add-to-cart-button::before {
+  border-radius: 10px;
+}
+
+.add-to-cart-button a{
+  display: inline-block;
+  overflow: hidden;
 }
 
 .film-info {
   background: linear-gradient(180deg, #D9D9D9 0%, rgba(217, 217, 217, 0) 100%);
   margin-bottom: 50px;
   display: grid;
-  grid-template-columns: 1fr 1fr; 
+  grid-template-columns: 40% 60%; 
   gap: 10px; 
-  margin-top: 150px;
+  margin-top: 60px;
 }
 
 .star-rate {
@@ -146,7 +174,11 @@ font-size: 36px;
 }
 
 .film-info-right {
-  margin: 40px 0px 0px 20px;
+  margin: 0px 0px 0px 20px;
+}
+
+.film-info-right p{
+  padding-right: 20px;
 }
 
 .rec-images {
@@ -166,4 +198,23 @@ font-size: 36px;
 
 #recommendations h4 {
   text-align: center;
+}
+
+#recommendations {
+  margin-top: 100px;
+}
+
+.top-button {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  align-items: center;
+  text-decoration: none;
+  color: #F28501;
+  font-weight: bold;
+}
+
+.top-button img {
+  transform: rotate(90deg);
+  margin-right: 10px;
 }
