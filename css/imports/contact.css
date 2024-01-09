@@ -1,6 +1,6 @@
 /*CONTACT PAGE*/
 
-.contact-hedding {
+.contact-heading {
   display: flex;
   justify-content: center;
 }
@@ -10,7 +10,6 @@
   border: 2px solid black;
   margin-bottom: 60px;
   display: flex;
-  flex: 1;
 }
 
 .contact-information-img {
@@ -23,19 +22,21 @@
   order: 2;
 }
 
-.contact-first-row, .contact-seccond-row {
+.contact-first-row{
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   margin: 10px;
+  margin-left: 140px;
+  order: 0;
 }
 
-.contact-first-row img, .contact-seccond-row img {
-  max-width: 50px;
+.contact-first-row img {
+  width: 50px;
   margin-right: 10px;
 }
 
-.contact-first-row p, .contact-seccond-row p {
+.contact-first-row p{
   font-size: 16px;
   margin-top: 0px;
 }
@@ -58,12 +59,110 @@
   gap: 20px;
 }
 
-.try-our-chat-button {
-  border: 2px solid black;
-  border-radius: 10px;
-}
-
 .contact-block, .facebook-block, .email-block, .instagram-block {
   display: flex;
   align-items: center;
 }
+
+.chat-container {
+  position: fixed;
+  top: 30%;
+  right: -300px;
+  height: 100%;
+  width: 300px;
+  background-color: #fff;
+  box-shadow: -3px 0 5px rgba(0, 0, 0, 0.1);
+  transition: right 0.3s ease-in-out;
+  max-height: 520px;
+  overflow-y: auto;
+  border-radius: 20px;
+  border: 2px solid #223241;
+  z-index: 999;
+}
+
+.chat-header {
+  background-color: #D9D9D9;
+  color: black;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.chat-header h2 {
+  margin: 0;
+  width: 100%;
+  text-align: center;
+  margin-left: 50px;
+}
+
+.close-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  transform: rotate(180deg);
+}
+
+
+.chat-content {
+  padding: 20px;
+}
+
+#closeChatBtn {
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+.chat-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.chat-form .form-input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 2px solid #757575;
+  background-color: #D9D9D9;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+.chat-form .form-input:focus {
+  outline: none;
+  border-color: #333;
+}
+
+.chat-form .fieldset {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.chat-form label {
+  font-weight: bold;
+  text-align: left;
+}
+
+.chat-form .form-button {
+  text-align: center;
+  cursor: pointer;
+}
+
+.contact-chat-button {
+    text-align: center;
+}
+
+.chat-form textarea {
+  height: 85px;
+  resize: vertical;
+}
+
+
