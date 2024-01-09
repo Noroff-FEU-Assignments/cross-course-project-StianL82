@@ -128,7 +128,7 @@ footer a {
 
 /*About*/
 
-.about-hedding h1 {
+.about-heading h1 {
     font-size: 36px;
 }
 
@@ -170,7 +170,7 @@ footer a {
 
 .film-info {
     grid-template-columns: 1fr;
-    margin-top: 440px;
+    margin-top: 300px;
 }
 
 
@@ -182,11 +182,11 @@ footer a {
     align-items: center;
 }
 
-.check1 {
+.payment-card {
     margin-bottom: 20px;
 }
 
-.check1 h3 {
+.payment-card h3 {
     text-align: center;
 }
 
@@ -194,7 +194,7 @@ footer a {
     padding: 10px 70px;
 }
 
-.check2 {
+.your-order-container {
     width: 100%;
 }
 
@@ -213,25 +213,15 @@ footer a {
 
 /*Contact*/
 
-.contact-information {
-    flex-direction: column;
-}
-
-.contact-first-row, .contact-seccond-row {
-    flex-direction: row;
+.contact-first-row{
     justify-content: space-around;
+    margin-left: 40px;
 }
 
-.email-block {
-    margin-left: 20px;
-}
 .instagram-block {
     margin-right: 10px;
 }
 
-.contact-img {
-    order: 0;
-}
 }
 
 /*Extra*/
@@ -286,17 +276,8 @@ footer p {
 
 /*Contact*/
 
-.personal-information .personal-content-wrap {
+.personal-information .payment-content-wrap {
     flex-direction: column; 
-}
-
-.continue-button {
-    position: static;
-    display: flex;
-    width: 250px;
-    border-radius: 10px;
-    justify-content: center;
-    margin-top: 40px;
 }
 
 .cart-button {
@@ -304,8 +285,14 @@ footer p {
     justify-content: center;
 }
 
-.conta h2 {
+.payment h2 {
     text-align: center;
+}
+
+/*Cart*/
+
+.cart-container{
+    flex-direction: column;
 }
 }
 
@@ -359,6 +346,10 @@ footer a {
     padding: 30px;
 }
 
+.add-container h2 {
+    padding: 30px;
+}
+
 
 /*videos*/
 
@@ -388,11 +379,11 @@ footer a {
 /*Product Page*/
 
 .film-info {
-    margin-top: 180px;
+    margin-top: 260px;
 }
 
 .movieImage img {
-    max-width: 300px;
+    max-width: 240px;
     border: 2px solid #FFFCF6;
 }
 
@@ -428,10 +419,6 @@ footer a {
 
 /*Checkout*/
 
-.continue-button {
-    font-size: 36px;
-}
-
 .card-form input {
     margin: 0px 10px 10px 10px;
 }
@@ -439,23 +426,25 @@ footer a {
 
 /*Contact*/
 
-.contact-first-row, .contact-seccond-row {
+.contact-img {
+    order: 0;
+}
+
+.contact-information {
     flex-direction: column;
-    align-items: center;
 }
 
-.contact-block {
-    margin-right: 90px;
-}
-
-.email-block {
-    margin-right: 56px;
+.contact-first-row{
+flex-direction: column;
+margin-left: 20px;
+max-width: 300px;
+margin: 0 auto;
+padding-bottom: 20px;
 }
 
 .instagram-block {
-    margin-left: 27px;
+    margin-top: 15px;
 }
-
 
 /*About*/
 
@@ -467,7 +456,7 @@ footer a {
 
 /*Extra*/
 
-@media (max-width: 460px) {
+@media (max-width: 480px) {
 
 .footer-logo img {
     max-width: 70%;
@@ -488,5 +477,10 @@ footer a {
 .contact-chat-button {
     flex-direction: column;
     text-align: center;
+}
+
+.quantity-box {
+    flex-direction: column;
+    align-items: flex-start;
 }
 }
