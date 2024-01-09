@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Contact our support at Squareeyes. We will try to help you with every question you may have. You can also try our chat for fast case processing."
+      content="Contact our support at SquareEyes. We will try to help you with every question you may have. You can also try our chat for fast case processing."
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -16,22 +16,9 @@
     />
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="icon" href="../images/Logo.png" />
-    <script>
-      (function (h, o, t, j, a, r) {
-        h.hj =
-          h.hj ||
-          function () {
-            (h.hj.q = h.hj.q || []).push(arguments);
-          };
-        h._hjSettings = { hjid: 3734880, hjsv: 6 };
-        a = o.getElementsByTagName("head")[0];
-        r = o.createElement("script");
-        r.async = 1;
-        r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
-        a.appendChild(r);
-      })(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=");
-    </script>
-    <title>Squareeyes | Contact</title>
+    <script type="module" src="/js/pages/contact.js"></script>
+    <script type="module" src="/js/components/validate_chat_form.js"></script>
+    <title>SquareEyes | Contact</title>
   </head>
   <body>
     <div class="header-section">
@@ -39,13 +26,16 @@
         <header>
           <div class="logo">
             <a href="index.html">
-              <img src="images/Logo.png" class="logo" alt="Squareeyes Logo"
+              <img
+                src="images/Logo_light.png"
+                class="logo"
+                alt="SquareEyes Logo"
             /></a>
           </div>
           <label for="hamburger" class="hamburger-icon"
             ><img src="images/icon-hamburger.png" alt="Icon for Hamburger Menu"
           /></label>
-          <input type="checkbox" id="hamburger" />
+          <input type="checkbox" id="hamburger" aria-labelledby="hamburger" />
           <nav>
             <label for="search1" id="searchlabel1">Search</label>
             <input
@@ -53,13 +43,14 @@
               class="nav-hidden hidden-search"
               placeholder="     Search"
               id="search1"
+              aria-labelledby="searchlabel1"
             />
+            <a href="index.html" class="nav-hidden">Home</a>
             <div class="h-links">
-              <a href="index.html">Home</a>
               <a href="videos.html">Videos</a>
+              <a href="about.html">About</a>
+              <a href="contact.html" class="active">Contact</a>
             </div>
-            <a href="about.html" class="nav-hidden">About</a>
-            <a href="contact.html" class="nav-hidden active">Contact</a>
             <a href="cart.html" class="nav-hidden">Cart</a>
           </nav>
           <label for="search2" id="searchlabel2">Search</label>
@@ -68,6 +59,7 @@
             class="search"
             placeholder="     Search"
             id="search2"
+            aria-labelledby="searchlabel2"
           />
           <div>
             <a
@@ -77,20 +69,22 @@
                 class="user-icon"
             /></a>
           </div>
-          <div class="cart-icon">
-            <a href="cart.html"
-              ><img
+          <div class="cart-icon" id="cartIcon">
+            <a href="cart.html">
+              <img
                 src="images/cart_icon.png"
                 alt="Cart Icon"
                 class="cart-icon"
-            /></a>
+              />
+              <span id="cartItemCount">0</span>
+            </a>
           </div>
         </header>
       </div>
     </div>
 
     <main>
-      <div class="contact-hedding">
+      <div class="contact-heading">
         <h1>Customer Service</h1>
       </div>
 
@@ -114,22 +108,21 @@
                   <p>+47 123 45 678</p>
                 </div>
               </div>
+              <div class="email-block">
+                <div>
+                  <img src="images/icon-mail.png" alt="E-mail icon" />
+                </div>
+                <div>
+                  <h4>Send us an email</h4>
+                  <p>test@SquareEyes.com</p>
+                </div>
+              </div>
               <div class="facebook-block">
                 <div>
                   <img src="images/icon-facebook.png" alt="Facebook icon" />
                 </div>
                 <div>
                   <h4>Facebook</h4>
-                  <p>facebook.com/squareeyes</p>
-                </div>
-              </div>
-            </div>
-            <div class="contact-seccond-row">
-              <div class="email-block">
-                <div><img src="images/icon-mail.png" alt="E-mail icon" /></div>
-                <div>
-                  <h4>Send us an email</h4>
-                  <p>test@squareeyes.com</p>
                 </div>
               </div>
               <div class="instagram-block">
@@ -138,7 +131,6 @@
                 </div>
                 <div>
                   <h4>Instagram</h4>
-                  <p>instagram.com/squareeyes/</p>
                 </div>
               </div>
             </div>
@@ -155,8 +147,80 @@
                 <p>Try our chat and we will help you</p>
               </div>
               <a href="#">
-                <h3 class="cta try-our-chat-button">Try Our Chat</h3>
+                <h3 id="openChatBtn" class="cta try-our-chat-button">
+                  Try Our Chat
+                </h3>
               </a>
+              <div id="chatContainer" class="chat-container">
+                <div id="chatHeader" class="chat-header">
+                  <h2>Chat</h2>
+
+                  <button id="closeChatBtn" class="close-btn">
+                    <img src="./images/Back-icon.png" alt="Close Icon" />
+                  </button>
+                </div>
+                <div id="chatContent" class="chat-content">
+                  <form method="GET">
+                    <div class="chat-form">
+                      <div class="fieldset">
+                        <label for="name">Name</label>
+                        <input
+                          type="text"
+                          name="name"
+                          id="name"
+                          class="form-input"
+                          placeholder="Ola Nordmann"
+                        />
+                        <div class="form-error" id="nameError">
+                          Please enter a valid name
+                        </div>
+                        <label for="email">Email</label>
+                        <input
+                          type="email"
+                          name="email"
+                          id="email"
+                          class="form-input"
+                          placeholder="test@mail.com"
+                        />
+                        <div class="form-error" id="emailError">
+                          Please enter a valid email address
+                        </div>
+                        <label for="phone">Phone number</label>
+                        <input
+                          type="tel"
+                          name="phone"
+                          id="phone"
+                          class="form-input"
+                          placeholder="+47 987 65 432"
+                        />
+                        <div class="form-error" id="phoneError">
+                          Please enter a valid phone number
+                        </div>
+                      </div>
+                      <div class="fieldset message">
+                        <label for="message">Write us a message</label>
+                        <textarea
+                          id="message"
+                          name="message"
+                          cols="30"
+                          rows="10"
+                          class="form-input"
+                        ></textarea>
+                        <div class="form-error" id="messageError">
+                          Please write your message
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-button">
+                      <input
+                        type="submit"
+                        value="Send Message"
+                        class="cta form-cta"
+                      />
+                    </div>
+                  </form>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -172,7 +236,7 @@
         <div class="footer-content">
           <div class="footer-logo">
             <a href="index.html"
-              ><img src="images/Logo.png" alt="Squareyes Logo"
+              ><img src="images/Logo_light.png" alt="Squareyes Logo"
             /></a>
           </div>
           <div class="footer-links">
