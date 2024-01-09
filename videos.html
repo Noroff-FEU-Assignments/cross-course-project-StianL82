@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Browse all our videos by category. Squareeyes has a large number of videos for your every mood."
+      content="Browse all our videos by category. SquareEyes has a large number of videos for your every mood."
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -17,22 +17,7 @@
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="icon" href="../images/Logo.png" />
     <script type="module" src="/js/pages/videos.js"></script>
-    <script>
-      (function (h, o, t, j, a, r) {
-        h.hj =
-          h.hj ||
-          function () {
-            (h.hj.q = h.hj.q || []).push(arguments);
-          };
-        h._hjSettings = { hjid: 3734880, hjsv: 6 };
-        a = o.getElementsByTagName("head")[0];
-        r = o.createElement("script");
-        r.async = 1;
-        r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
-        a.appendChild(r);
-      })(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=");
-    </script>
-    <title>Squareeyes | Videos</title>
+    <title>SquareEyes | Videos</title>
   </head>
   <body>
     <div class="header-section">
@@ -40,13 +25,16 @@
         <header>
           <div class="logo">
             <a href="index.html">
-              <img src="images/Logo.png" class="logo" alt="Squareeyes Logo"
+              <img
+                src="images/Logo_light.png"
+                class="logo"
+                alt="SquareEyes Logo"
             /></a>
           </div>
           <label for="hamburger" class="hamburger-icon"
             ><img src="images/icon-hamburger.png" alt="Icon for Hamburger Menu"
           /></label>
-          <input type="checkbox" id="hamburger" />
+          <input type="checkbox" id="hamburger" aria-labelledby="hamburger" />
           <nav>
             <label for="search1" id="searchlabel1">Search</label>
             <input
@@ -54,13 +42,14 @@
               class="nav-hidden hidden-search"
               placeholder="     Search"
               id="search1"
+              aria-labelledby="searchlabel1"
             />
+            <a href="index.html" class="nav-hidden">Home</a>
             <div class="h-links">
-              <a href="index.html">Home</a>
               <a href="videos.html" class="active">Videos</a>
+              <a href="about.html">About</a>
+              <a href="contact.html">Contact</a>
             </div>
-            <a href="about.html" class="nav-hidden">About</a>
-            <a href="contact.html" class="nav-hidden">Contact</a>
             <a href="cart.html" class="nav-hidden">Cart</a>
           </nav>
           <label for="search2" id="searchlabel2">Search</label>
@@ -69,6 +58,7 @@
             class="search"
             placeholder="     Search"
             id="search2"
+            aria-labelledby="searchlabel2"
           />
           <div>
             <a
@@ -78,13 +68,15 @@
                 class="user-icon"
             /></a>
           </div>
-          <div class="cart-icon">
-            <a href="cart.html"
-              ><img
+          <div class="cart-icon" id="cartIcon">
+            <a href="cart.html">
+              <img
                 src="images/cart_icon.png"
                 alt="Cart Icon"
                 class="cart-icon"
-            /></a>
+              />
+              <span id="cartItemCount">0</span>
+            </a>
           </div>
         </header>
       </div>
@@ -99,7 +91,7 @@
           <nav class="genre-nav-content">
             <a href="#section-1">Action</a>
             <a href="#section-2">Kids</a>
-            <a href="#section-3">Drama</a>
+            <a href="#section-3">Fantasy</a>
             <a href="#section-4">Horror</a>
             <a href="#section-5">Comedy</a>
           </nav>
@@ -107,16 +99,22 @@
       </div>
       <div class="threefortwo-add">
         <div>
-          <img
-            src="images/3for2_Advertisement.png"
-            alt="Add. Buy three movies, pay for two"
-          />
+          <a href="index.html">
+            <img
+              src="images/2024_Advertisement.png"
+              alt="Add. Buy three movies, pay for two"
+            />
+          </a>
         </div>
       </div>
     </main>
 
     <section class="genre" id="section-1">
       <h2>Action</h2>
+      <a href="#top" class="top-button" aria-label="Back to Top">
+        <img src="images/Back-icon.png" alt="Back to top icon" />
+        <span>Back to top</span>
+      </a>
       <div class="content-wrap">
         <div class="loading-indicator">
           <div class="spinner"></div>
@@ -128,6 +126,10 @@
 
     <section class="genre" id="section-2">
       <h2>Kids</h2>
+      <a href="#top" class="top-button" aria-label="Back to Top">
+        <img src="images/Back-icon.png" alt="Back to top icon" />
+        <span>Back to top</span>
+      </a>
       <div class="content-wrap">
         <div class="loading-indicator">
           <div class="spinner"></div>
@@ -138,18 +140,26 @@
     </section>
 
     <section class="genre" id="section-3">
-      <h2>Drama</h2>
+      <h2>Fantasy</h2>
+      <a href="#top" class="top-button" aria-label="Back to Top">
+        <img src="images/Back-icon.png" alt="Back to top icon" />
+        <span>Back to top</span>
+      </a>
       <div class="content-wrap">
         <div class="loading-indicator">
           <div class="spinner"></div>
           <p>Loading...</p>
         </div>
-        <div class="movie-row dramaGenre"></div>
+        <div class="movie-row fantasyGenre"></div>
       </div>
     </section>
 
     <section class="genre" id="section-4">
       <h2>Horror</h2>
+      <a href="#top" class="top-button" aria-label="Back to Top">
+        <img src="images/Back-icon.png" alt="Back to top icon" />
+        <span>Back to top</span>
+      </a>
       <div class="content-wrap">
         <div class="loading-indicator">
           <div class="spinner"></div>
@@ -161,6 +171,10 @@
 
     <section class="genre" id="section-5">
       <h2>Comedy</h2>
+      <a href="#top" class="top-button" aria-label="Back to Top">
+        <img src="images/Back-icon.png" alt="Back to top icon" />
+        <span>Back to top</span>
+      </a>
       <div class="content-wrap">
         <div class="loading-indicator">
           <div class="spinner"></div>
@@ -175,7 +189,7 @@
         <div class="footer-content">
           <div class="footer-logo">
             <a href="index.html"
-              ><img src="images/Logo.png" alt="Squareyes Logo"
+              ><img src="images/Logo_light.png" alt="SquareEyes Logo"
             /></a>
           </div>
           <nav class="footer-links">
