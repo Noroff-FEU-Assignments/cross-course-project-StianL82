@@ -13,7 +13,7 @@ const onSaleContainer = document.querySelector(".onSale");
 loadingIndicator.style.display = "block";
 
 
-// Render filmer merket som favoritter
+// Render movies marked as Favorite
 async function renderFavoriteMoviesHTML(movies) {
   showLoadingIndicator();
   try {
