@@ -2,8 +2,6 @@
 
 export const apiUrl = "https://squareeyes.stianlilleng.no/wp-json/wc/store/products?per_page=50";
 
-export const productApiUrl = "https://squareeyes.stianlilleng.no/wp-json/wc/store/products/";
-
 export async function fetchApiCall() {
     try {
         const response = await fetch(apiUrl);
