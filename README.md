@@ -1,6 +1,6 @@
 # cross-course-project-StianL82
 
-## SquareEyes
+## SquareEyes 🎥
 
 ![image](/images/readme/screencapture-cross-course-project-js-stianl82-netlify-app-2024-02-19-18_18_17-min%201-min.png)
 
