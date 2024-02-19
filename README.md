@@ -1,10 +1,16 @@
 # cross-course-project-StianL82
 
+![image](/images/Logo.png)
+
 ## SquareEyes
 
 ![image](/images/readme/screencapture-cross-course-project-js-stianl82-netlify-app-2024-02-19-18_18_17-min%201-min.png)
 
 This will be the folder for my cross course project.
+
+## Visit the page at:
+
+https://cross-course-project-js-stianl82.netlify.app/
 
 ## Description
 
