@@ -2,7 +2,7 @@
 
 ![image](/images/Logo.png)
 
-## SquareEyes
+## SquareEyes 🎥
 
 ![image](/images/readme/screencapture-cross-course-project-js-stianl82-netlify-app-2024-02-19-18_18_17-min%201-min.png)
 
@@ -16,7 +16,7 @@ https://cross-course-project-js-stianl82.netlify.app/
 
 This is my cross-course project. It is an ongoing project that has been with us since we started our studies. Several course assignments have been completed on this page, shaping how it looks today.
 
-This was also the first page I ever created with HTML and CSS. It has since been modified with JavaScript, and products have been transformed from hardcoded data to dynamic data from a WordPress API. This particular page can be considered a patchwork of coding.
+This was also the first page I ever created with HTML and CSS. It has since been modified with JavaScript, and products have been transformed from hardcoded data to dynamic data from a WordPress API. This particular page can be considered a patchwork of coding.😄
 
 ## Built With
 
@@ -33,7 +33,7 @@ This was also the first page I ever created with HTML and CSS. It has since been
 Clone the repo:
 
 ```
-git clone git@github.com:Noroff-FEU-Assignments/cross-course-project-StianL82.git
+git clone git@github.com/Noroff-FEU-Assignments/cross-course-project-StianL82.git
 ```
 
 ### Running
