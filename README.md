@@ -10,7 +10,7 @@ This will be the folder for my cross course project.
 
 This is my cross-course project. It is an ongoing project that has been with us since we started our studies. Several course assignments have been completed on this page, shaping how it looks today.
 
-This was also the first page I ever created with HTML and CSS. It has since been modified with JavaScript, and products have been transformed from hardcoded data to dynamic data from a WordPress API. This particular page can be considered a patchwork of coding.
+This was also the first page I ever created with HTML and CSS. It has since been modified with JavaScript, and products have been transformed from hardcoded data to dynamic data from a WordPress API. This particular page can be considered a patchwork of coding.😄
 
 ## Built With
 
