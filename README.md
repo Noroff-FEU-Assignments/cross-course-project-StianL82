@@ -27,7 +27,7 @@ This was also the first page I ever created with HTML and CSS. It has since been
 Clone the repo:
 
 ```
-git clone git@github.com:Noroff-FEU-Assignments/cross-course-project-StianL82.git
+git clone git@github.com/Noroff-FEU-Assignments/cross-course-project-StianL82.git
 ```
 
 ### Running
