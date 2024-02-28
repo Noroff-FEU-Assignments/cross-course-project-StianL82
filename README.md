@@ -38,6 +38,6 @@ git clone git@github.com/Noroff-FEU-Assignments/cross-course-project-StianL82.gi
 
 Open with live server, or open in browser [Link to page](https://cross-course-project-js-stianl82.netlify.app/).
 
-## Contact
+## Contact 📫
 
 Feel free to contact me at stian.lilleng@gmail.com
